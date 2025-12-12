@@ -43,8 +43,7 @@ uvicorn main:app --reload
 
 This diagram visually explains the multi-tenant architecture, showing how the Master Database relates to the dynamically created collections.
 
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/02d3bd58-7a11-4bfa-bd0f-478b98bd5a5d" />
-
+<img width="1024" height="918" alt="image" src="https://github.com/user-attachments/assets/c1304185-0b93-4fa1-92ef-9d619cb611b3" />
 
 
 
@@ -81,3 +80,4 @@ The current design is highly scalable in terms of **deployment (FastAPI is fast)
 
 **A Better Design for Massive Scale:**
 For enterprise-level isolation and greater horizontal scaling, the **"Shared Database Server, Separate Databases"** model is superior. In this alternative, each organization would have its own MongoDB **database** (not just a collection) on the shared server. This provides true resource isolation and prevents the "Noisy Neighbor" issue at the database level.
+
